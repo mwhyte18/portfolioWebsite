@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css?family=Baloo+Da+2|Roboto&display=swap");
 .App {
   text-align: center;
   display: flex;
   justify-content: space-evenly;
+  font-family: "Baloo Da 2", cursive;
 }
 .center {
   width: 60%;
@@ -87,68 +89,13 @@ img {
     border: 1px solid #0c6b97;
   }
 }
-.myWork {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  margin-top: 3%;
-  .task,
-  .task * {
-    box-sizing: border-box;
-  }
-  .task {
-    position: relative;
-    display: inline-block;
-    overflow: hidden;
-    max-width: 100%;
-    height: auto;
-    width: 45%;
-    margin-bottom: 4%;
-  }
-  .task img {
-    max-width: 100%;
-  }
-  .task .task-layer_bottom {
-    display: block;
-  }
-  .task .task-layer_top {
-    opacity: 0;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
 
-    background: rgba(0, 0, 0, 0.9);
-    color: #fff;
-    padding: 15px;
-    -moz-transition: all 0.4s ease-in-out 0s;
-    -webkit-transition: all 0.4s ease-in-out 0s;
-    -ms-transition: all 0.4s ease-in-out 0s;
-    transition: all 0.4s ease-in-out 0s;
-  }
-  .task:hover .task-layer_top,
-  .task.active .task-layer_top {
-    opacity: 1;
-  }
-  .task .task-text {
-    text-align: center;
-    display: inline-block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -moz-transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-  }
-}
 .footer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 1% 0;
+  margin-top: 10%;
 }
 .titles {
   display: flex;
@@ -209,4 +156,66 @@ textarea {
 }
 .submmitt {
   margin-top: 2%;
+}
+
+.work {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .github {
+    color: #24292e;
+    background-color: #eff3f6;
+    border: none;
+    padding: 3% 5%;
+    border: 1px solid #cdcfd1;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-right: 5%;
+    width: 100%;
+  }
+  .github:hover {
+    border: 1px solid #959596;
+    background-color: #e3e6e9;
+  }
+  .task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid lightgrey;
+  }
+  p {
+    width: 46%;
+  }
+  .icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 20%;
+  }
+  .nameAndIcon {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .clipboard {
+    color: #654321;
+    padding-right: 3%;
+  }
+
+  .faLaptopCode {
+    color: #7338d0;
+    padding-right: 3%;
+  }
+  .faSpaceShuttle {
+    color: #003b59;
+    padding-right: 3%;
+  }
 }
