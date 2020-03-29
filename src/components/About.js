@@ -26,7 +26,7 @@ const About = () => {
           </button>
         </div>
       </div>
-      <div className="imageWidth">
+      <div className="img-hover-zoom">
         <img src={computer} alt="computer with react code" />
       </div>
     </div>

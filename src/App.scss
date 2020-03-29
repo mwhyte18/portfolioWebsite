@@ -16,6 +16,13 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  .changeMode {
+    color: #fefcd7;
+    background-color: #141852;
+    padding: 1%;
+    border-radius: 10px;
+    font-size: 1.6rem;
+  }
 }
 .navlinks {
   width: 45%;
@@ -59,6 +66,20 @@ img {
   .imageWidth {
     width: 40%;
   }
+  .img-hover-zoom {
+    overflow: hidden;
+    width: 40%;
+  }
+  /* [2] Transition property for smooth transformation of images */
+  .img-hover-zoom img {
+    transition: transform 0.5s ease;
+  }
+
+  /* [3] Finally, transforming the image when container gets hovered */
+  .img-hover-zoom:hover img {
+    transform: scale(3);
+  }
+
   img {
     width: 100%;
   }
@@ -70,6 +91,7 @@ img {
     border: 1px solid #cdcfd1;
     margin-right: 2%;
     cursor: pointer;
+    border-radius: 5px;
   }
   .github:hover {
     border: 1px solid #959596;
@@ -83,6 +105,7 @@ img {
     border: 1px solid #0e76a8;
     margin-left: 2%;
     cursor: pointer;
+    border-radius: 5px;
   }
   .linkedin:hover {
     background-color: rgb(241, 241, 241);
@@ -169,10 +192,11 @@ textarea {
     padding: 3% 5%;
     border: 1px solid #cdcfd1;
     cursor: pointer;
-    overflow: hidden;
+    overflow: visible;
     white-space: nowrap;
     margin-right: 5%;
     width: 100%;
+    border-radius: 5px;
   }
   .github:hover {
     border: 1px solid #959596;
@@ -201,7 +225,7 @@ textarea {
     justify-content: space-evenly;
     align-items: center;
     cursor: pointer;
-    overflow: hidden;
+    overflow: visible;
     white-space: nowrap;
   }
 
@@ -211,11 +235,50 @@ textarea {
   }
 
   .faLaptopCode {
-    color: #7338d0;
+    color: #dfa417;
     padding-right: 3%;
   }
   .faSpaceShuttle {
     color: #003b59;
     padding-right: 3%;
+  }
+  .visitSite {
+    color: white;
+    background-color: #5183f5;
+    border: none;
+    padding: 3% 5%;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid #5183f5;
+    overflow: visible;
+  }
+  .visitSite:hover {
+    background-color: #385bab;
+    border: 1px solid #203462;
+  }
+}
+.freelance {
+  .modernize {
+    width: 60%;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 1624px) {
+  .center {
+    width: 70%;
+  }
+}
+
+@media (max-width: 1414px) {
+  .center {
+    width: 80%;
+  }
+}
+@media (max-width: 1274px) {
+}
+@media (max-width: 1034px) {
+  .center {
+    width: 95%;
   }
 }

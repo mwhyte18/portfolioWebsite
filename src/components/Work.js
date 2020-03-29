@@ -1,10 +1,10 @@
 import React from "react";
-import modernizeme from "./modernizeme.PNG";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faClipboardList } from "@fortawesome/free-solid-svg-icons";
 import { faLaptopCode } from "@fortawesome/free-solid-svg-icons";
 import { faSpaceShuttle } from "@fortawesome/free-solid-svg-icons";
+import { faQuoteRight } from "@fortawesome/free-solid-svg-icons";
 
 const Work = () => {
   return (
@@ -18,7 +18,7 @@ const Work = () => {
           <FontAwesomeIcon
             className="clipboard"
             icon={faClipboardList}
-            size="2x"
+            size="3x"
           />
 
           <h2>Todo App</h2>
@@ -43,15 +43,15 @@ const Work = () => {
         >
           <FontAwesomeIcon
             className="faLaptopCode"
-            icon={faLaptopCode}
+            icon={faQuoteRight}
             size="2x"
           />
 
-          <h2>Modernize Me</h2>
+          <h2>Quote Generator</h2>
         </div>
         <p>
-          A simple login todo app, using redux and login with backend asd asdfa
-          ja j sdjo aojd jasdoj
+          A react-redux web app that generates random Kanye quotes and Trump
+          tweets, using kanye.rest api and a Donald Trump api
         </p>
         <div className="icons">
           <button className="github">

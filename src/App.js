@@ -4,6 +4,7 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Navbar from "./components/Navbar";
 import Work from "./components/Work";
+import Freelance from "./components/Freelance";
 import Footer from "./components/Footer";
 import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
 function App() {
@@ -20,6 +21,7 @@ function App() {
                 <div>
                   <About />
                   <Work />
+                  <Freelance />
                   <Footer />
                 </div>
               )}
