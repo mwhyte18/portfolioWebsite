@@ -9,7 +9,7 @@ const Footer = () => {
     <div className="footer">
       <div className="titles">
         <FontAwesomeIcon className="totop" icon={faAngleDoubleUp} size="2x" />
-        <p>Contact</p>
+        <a href="/contact">Contact</a>
       </div>
       <div className="icons">
         <FontAwesomeIcon className="rotate" icon={faGithub} size="2x" />

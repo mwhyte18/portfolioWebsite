@@ -32,10 +32,12 @@
   a {
     text-decoration: none;
     color: black;
-    padding: 3%;
+    padding: 2%;
+    border-radius: 15px;
   }
   a:hover {
-    background-color: lightgrey;
+    background-color: #f2f2f2;
+    color: #6457db;
   }
 }
 .name {
@@ -49,7 +51,7 @@
     padding: 3%;
   }
   a:hover {
-    background-color: lightgrey;
+    color: #6457db;
   }
 }
 
@@ -117,6 +119,14 @@ img {
   align-items: center;
   padding: 1% 0;
   margin-top: 10%;
+  padding-bottom: 6%;
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  a:hover {
+    color: #6457db;
+  }
 }
 .titles {
   display: flex;
@@ -218,6 +228,9 @@ textarea {
   p {
     width: 46%;
   }
+  h2:hover {
+    color: #6457db;
+  }
   .icons {
     display: flex;
     justify-content: space-between;
@@ -250,7 +263,7 @@ textarea {
   }
   .visitSite {
     color: white;
-    background-color: #5183f5;
+    background-color: #6457db;
     border: none;
     padding: 3% 5%;
     cursor: pointer;
@@ -260,8 +273,8 @@ textarea {
     white-space: nowrap;
   }
   .visitSite:hover {
-    background-color: #385bab;
-    border: 1px solid #203462;
+    background-color: #322b6d;
+    border: 1px solid #1e1a41;
   }
 }
 .freelance {
@@ -291,6 +304,9 @@ textarea {
   .icons {
     padding-right: 2%;
   }
+  .navlinks {
+    width: 55%;
+  }
 }
 
 @media (max-width: 964px) {
@@ -301,6 +317,11 @@ textarea {
     width: 20%;
   }
 }
+@media (max-width: 880px) {
+  .navlinks {
+    padding-right: 3%;
+  }
+}
 
 @media (max-width: 874px) {
   .icons {
@@ -309,10 +330,16 @@ textarea {
   .work p {
     width: 42%;
   }
-}
-@media (max-width: 880px) {
   .navlinks {
-    padding-right: 3%;
+    width: 65%;
+  }
+}
+@media (max-width: 769px) {
+  .freelance .modernize {
+    width: 90%;
+  }
+  .footer .icons {
+    width: 13%;
   }
 }
 
@@ -349,7 +376,20 @@ textarea {
   .faLaptopCode {
     padding-left: 3%;
   }
+  .about .mySection {
+    width: 70%;
+  }
 }
+
+@media (max-width: 670px) {
+  .nav .name {
+    display: none;
+  }
+  .navlinks {
+    width: 100%;
+  }
+}
+
 @media (max-width: 544px) {
   .work h2 {
     font-size: 15px;
@@ -363,10 +403,46 @@ textarea {
   .faSpaceShuttle {
     font-size: 20px;
   }
+  .about .mySection {
+    width: 90%;
+  }
+  .footer .icons {
+    width: 15%;
+  }
 }
 
+@media (max-width: 488px) {
+  .footer .icons {
+    width: 19%;
+    font-size: 13px;
+  }
+  .footer .titles {
+    width: 26%;
+  }
+  .footer .totop {
+    font-size: 25px;
+  }
+}
 @media (max-width: 442px) {
   .work .icons {
     padding-right: 14%;
+  }
+}
+
+@media (max-width: 397px) {
+  .nav a {
+    font-size: 12px;
+  }
+  .nav .changeMode {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 378px) {
+  .work button {
+    font-size: 10px;
+  }
+  .work .icons {
+    padding-right: 12%;
   }
 }
