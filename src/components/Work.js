@@ -21,7 +21,7 @@ const Work = () => {
             size="3x"
           />
 
-          <h2>Todo App</h2>
+          <h2>Login Todo App</h2>
         </div>
         <p>
           A simple login todo app, making all your tasks easily accessible. Uses
@@ -73,7 +73,7 @@ const Work = () => {
             size="2x"
           />
 
-          <h2>NASA Photo</h2>
+          <h2>NASAa Photo</h2>
         </div>
         <p>
           A simple login todo app, using redux and login with backend asd asdfa

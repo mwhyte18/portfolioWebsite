@@ -63,9 +63,7 @@ img {
   .mySection {
     width: 50%;
   }
-  .imageWidth {
-    width: 40%;
-  }
+
   .img-hover-zoom {
     overflow: hidden;
     width: 40%;
@@ -123,7 +121,14 @@ img {
 .titles {
   display: flex;
   justify-content: space-between;
-  width: 20%;
+  align-items: center;
+  width: 15%;
+}
+.totop {
+  cursor: pointer;
+}
+.totop:hover {
+  color: #6457db;
 }
 .icons {
   display: flex;
@@ -135,6 +140,7 @@ img {
 }
 .rotate:hover {
   animation: fa-spin 2s infinite linear;
+  color: #6457db;
 }
 // The animation bellow is taken from font-awesome.css
 @-webkit-keyframes fa-spin {
@@ -251,6 +257,7 @@ textarea {
     border-radius: 5px;
     border: 1px solid #5183f5;
     overflow: visible;
+    white-space: nowrap;
   }
   .visitSite:hover {
     background-color: #385bab;
@@ -264,21 +271,102 @@ textarea {
   }
 }
 
-@media (max-width: 1624px) {
+@media (max-width: 1690px) {
   .center {
     width: 70%;
   }
 }
 
-@media (max-width: 1414px) {
+@media (max-width: 1465px) {
   .center {
     width: 80%;
   }
 }
 @media (max-width: 1274px) {
-}
-@media (max-width: 1034px) {
   .center {
-    width: 95%;
+    width: 93%;
+  }
+}
+@media (max-width: 1096px) {
+  .icons {
+    padding-right: 2%;
+  }
+}
+
+@media (max-width: 964px) {
+  .icons {
+    padding-right: 4%;
+  }
+  .titles {
+    width: 20%;
+  }
+}
+
+@media (max-width: 874px) {
+  .icons {
+    padding-right: 7%;
+  }
+  .work p {
+    width: 42%;
+  }
+}
+@media (max-width: 880px) {
+  .navlinks {
+    padding-right: 3%;
+  }
+}
+
+@media (max-width: 743px) {
+  .img-hover-zoom {
+    display: none;
+  }
+  .about {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .work p {
+    display: none;
+  }
+  .nameAndIcon {
+    width: 40%;
+    margin: 0;
+    padding: 0;
+  }
+  .work .icons {
+    width: 40%;
+    margin: 0;
+    padding: 0;
+    padding-right: 7%;
+    margin-right: 3%;
+  }
+  .task {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+  }
+  .faLaptopCode {
+    padding-left: 3%;
+  }
+}
+@media (max-width: 544px) {
+  .work h2 {
+    font-size: 15px;
+  }
+  .clipboard {
+    font-size: 25px;
+  }
+  .faLaptopCode {
+    font-size: 20px;
+  }
+  .faSpaceShuttle {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 442px) {
+  .work .icons {
+    padding-right: 14%;
   }
 }

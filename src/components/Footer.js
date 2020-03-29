@@ -2,14 +2,13 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faMoon } from "@fortawesome/free-solid-svg-icons";
-import { faSun } from "@fortawesome/free-solid-svg-icons";
+import { faAngleDoubleUp } from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => {
   return (
     <div className="footer">
       <div className="titles">
-        <p>Back To Top</p>
+        <FontAwesomeIcon className="totop" icon={faAngleDoubleUp} size="2x" />
         <p>Contact</p>
       </div>
       <div className="icons">
