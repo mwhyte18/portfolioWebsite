@@ -5,6 +5,7 @@ import { faClipboardList } from "@fortawesome/free-solid-svg-icons";
 import { faLaptopCode } from "@fortawesome/free-solid-svg-icons";
 import { faSpaceShuttle } from "@fortawesome/free-solid-svg-icons";
 import { faQuoteRight } from "@fortawesome/free-solid-svg-icons";
+import { faSearchengin } from "@fortawesome/free-brands-svg-icons";
 
 const Work = () => {
   return (
@@ -12,7 +13,38 @@ const Work = () => {
       <h1>My Work</h1>
       <div className="task">
         <div
-          onClick={() => window.open("http://www.google.com", "_blank")}
+          onClick={() => window.open("https://www.searchify.club", "_blank")}
+          className="nameAndIcon"
+        >
+          <FontAwesomeIcon
+            className="searchify"
+            icon={faSearchengin}
+            size="3x"
+          />
+
+          <h2>Searchify</h2>
+        </div>
+        <p>
+          Using the spotify api, this app allows you to explore music, see what
+          music you like and create new playlists based on a song you like.
+        </p>
+        <div className="icons">
+          <button className="github">
+            <FontAwesomeIcon icon={faGithub} />
+            {"  "}
+            Open Source
+          </button>
+          <button
+            className="visitSite"
+            onClick={() => window.open("https://www.searchify.club", "_blank")}
+          >
+            Visit Site
+          </button>
+        </div>
+      </div>
+      <div className="task">
+        <div
+          onClick={() => window.open("https://www.searchify.club", "_blank")}
           className="nameAndIcon"
         >
           <FontAwesomeIcon
@@ -33,7 +65,12 @@ const Work = () => {
             {"  "}
             Open Source
           </button>
-          <button className="visitSite">Visit Site</button>
+          <button
+            className="visitSite"
+            onClick={() => window.open("https://www.searchify.club", "_blank")}
+          >
+            Visit Site
+          </button>
         </div>
       </div>
       <div className="task">
@@ -74,58 +111,6 @@ const Work = () => {
           />
 
           <h2>NASAa Photo</h2>
-        </div>
-        <p>
-          A simple login todo app, using redux and login with backend asd asdfa
-          ja j sdjo aojd jasdoj
-        </p>
-        <div className="icons">
-          <button className="github">
-            <FontAwesomeIcon icon={faGithub} />
-            {"  "}
-            Open Source
-          </button>
-          <button className="visitSite">Visit Site</button>
-        </div>
-      </div>
-      <div className="task">
-        <div
-          onClick={() => window.open("http://www.google.com", "_blank")}
-          className="nameAndIcon"
-        >
-          <FontAwesomeIcon
-            className="faSpaceShuttle"
-            icon={faSpaceShuttle}
-            size="2x"
-          />
-
-          <h2>NASA Photo</h2>
-        </div>
-        <p>
-          A simple login todo app, using redux and login with backend asd asdfa
-          ja j sdjo aojd jasdoj
-        </p>
-        <div className="icons">
-          <button className="github">
-            <FontAwesomeIcon icon={faGithub} />
-            {"  "}
-            Open Source
-          </button>
-          <button className="visitSite">Visit Site</button>
-        </div>
-      </div>
-      <div className="task">
-        <div
-          onClick={() => window.open("http://www.google.com", "_blank")}
-          className="nameAndIcon"
-        >
-          <FontAwesomeIcon
-            className="faSpaceShuttle"
-            icon={faSpaceShuttle}
-            size="2x"
-          />
-
-          <h2>NASA Photo</h2>
         </div>
         <p>
           A simple login todo app, using redux and login with backend asd asdfa

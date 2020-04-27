@@ -1,11 +1,24 @@
-import React from "react";
-import { faMoon } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSun } from "@fortawesome/free-solid-svg-icons";
+import React, { useEffect } from "react";
 
 const Navbar = () => {
+  useEffect(() => {
+    window.addEventListener("scroll", resizeNavOnScroll);
+  });
+
+  function resizeNavOnScroll() {
+    const distanceY = window.pageYOffset || document.documentElement.scrollTop,
+      shrinkOn = 60,
+      navbarEl = document.getElementById("js-navbar");
+
+    if (distanceY >= shrinkOn) {
+      navbarEl.classList.add("smaller");
+    } else if (distanceY < shrinkOn) {
+      navbarEl.classList.remove("smaller");
+    }
+  }
+
   return (
-    <div className="nav">
+    <div className="nav" id="js-navbar">
       <div className="name">
         <a href="/">Marco Whyte</a>
       </div>
@@ -16,11 +29,6 @@ const Navbar = () => {
         <a className="contactlink" href="/contact">
           Contact
         </a>
-        <FontAwesomeIcon
-          onClick={() => window.open("https://modernizeme.com/", "_blank")}
-          className="changeMode"
-          icon={faMoon}
-        />
       </div>
     </div>
   );

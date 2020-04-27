@@ -5,24 +5,32 @@
   justify-content: space-evenly;
   font-family: "Baloo Da 2", cursive;
 }
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 .center {
   width: 60%;
 }
 
 .nav {
+  background-color: white;
   display: flex;
   justify-content: space-between;
   padding: 5% 0;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  .changeMode {
-    color: #fefcd7;
-    background-color: #141852;
-    padding: 1%;
-    border-radius: 10px;
-    font-size: 1.6rem;
-  }
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  transition: padding 0.3s;
+}
+.nav.smaller {
+  padding: 1% 0;
 }
 .navlinks {
   width: 45%;
@@ -252,6 +260,10 @@ textarea {
     color: #654321;
     padding-right: 3%;
   }
+  .searchify {
+    color: #1db954;
+    padding-right: 3%;
+  }
 
   .faLaptopCode {
     color: #dfa417;
@@ -262,6 +274,7 @@ textarea {
     padding-right: 3%;
   }
   .visitSite {
+    text-decoration: none;
     color: white;
     background-color: #6457db;
     border: none;
@@ -395,6 +408,9 @@ textarea {
     font-size: 15px;
   }
   .clipboard {
+    font-size: 25px;
+  }
+  .searchify {
     font-size: 25px;
   }
   .faLaptopCode {
