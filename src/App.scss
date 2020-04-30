@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Baloo+Da+2|Roboto&display=swap");
+
+$myPurple: #6457db;
+
 .App {
   text-align: center;
   display: flex;
@@ -17,21 +20,93 @@
 }
 
 .nav {
-  background-color: white;
-  display: flex;
-  justify-content: space-between;
-  padding: 5% 0;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
+  width: 100%;
   top: 0;
-  transition: padding 0.3s;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  background: white;
+
+  &.scroll {
+    box-shadow: 1px 2px 18px rgba(0, 0, 0, 0.1);
+    .nav-container {
+      height: 60px;
+    }
+  }
+
+  .nav-container {
+    height: 160px;
+    padding: 0 2rem;
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: height 0.3s ease;
+  }
+
+  .brand {
+    a {
+      display: flex;
+      align-items: center;
+      color: #333;
+      margin-right: 0;
+      font-weight: 500;
+      font-size: 1.3rem;
+
+      &:hover,
+      &:focus {
+        color: $myPurple;
+      }
+    }
+
+    .text {
+      display: block;
+      white-space: nowrap;
+    }
+  }
+
+  .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 100%;
+    align-items: center;
+    flex: 1;
+    margin: 0;
+
+    a {
+      font-size: 1.2rem;
+      margin: 0 0.5rem;
+      padding: 1rem;
+      border-bottom: 2px solid transparent;
+      display: flex;
+      align-items: center;
+      font-weight: 400;
+      color: rgba(0, 0, 0, 0.6);
+      line-height: 1.2;
+      text-align: center;
+      border-radius: 6px;
+
+      &:hover,
+      &:active,
+      &.active {
+        color: $myPurple;
+        background: rgba(0, 0, 0, 0.05);
+      }
+    }
+  }
 }
-.nav.smaller {
-  padding: 1% 0;
+
+.favicon {
+  height: 23px;
+  width: 23px;
+  min-width: 23px;
+  margin-right: 1rem;
+  margin-bottom: 0;
 }
+
 .navlinks {
   width: 45%;
   display: flex;
@@ -45,22 +120,17 @@
   }
   a:hover {
     background-color: #f2f2f2;
-    color: #6457db;
+    color: $myPurple;
   }
 }
-.name {
-  width: 20%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  a {
-    text-decoration: none;
-    color: black;
-    padding: 3%;
-  }
-  a:hover {
-    color: #6457db;
-  }
+
+a {
+  text-decoration: none;
+  color: black;
+  padding: 3%;
+}
+a:hover {
+  color: $myPurple;
 }
 
 img {
@@ -70,6 +140,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 170px;
   .mySection {
     width: 50%;
   }
@@ -133,7 +204,7 @@ img {
     color: black;
   }
   a:hover {
-    color: #6457db;
+    color: $myPurple;
   }
 }
 .titles {
@@ -146,7 +217,7 @@ img {
   cursor: pointer;
 }
 .totop:hover {
-  color: #6457db;
+  color: $myPurple;
 }
 .icons {
   display: flex;
@@ -158,7 +229,7 @@ img {
 }
 .rotate:hover {
   animation: fa-spin 2s infinite linear;
-  color: #6457db;
+  color: $myPurple;
 }
 // The animation bellow is taken from font-awesome.css
 @-webkit-keyframes fa-spin {
@@ -237,7 +308,7 @@ textarea {
     width: 46%;
   }
   h2:hover {
-    color: #6457db;
+    color: $myPurple;
   }
   .icons {
     display: flex;
@@ -276,7 +347,7 @@ textarea {
   .visitSite {
     text-decoration: none;
     color: white;
-    background-color: #6457db;
+    background-color: $myPurple;
     border: none;
     padding: 3% 5%;
     cursor: pointer;
@@ -317,9 +388,6 @@ textarea {
   .icons {
     padding-right: 2%;
   }
-  .navlinks {
-    width: 55%;
-  }
 }
 
 @media (max-width: 964px) {
@@ -331,9 +399,6 @@ textarea {
   }
 }
 @media (max-width: 880px) {
-  .navlinks {
-    padding-right: 3%;
-  }
 }
 
 @media (max-width: 874px) {
@@ -342,9 +407,6 @@ textarea {
   }
   .work p {
     width: 42%;
-  }
-  .navlinks {
-    width: 65%;
   }
 }
 @media (max-width: 769px) {
@@ -395,12 +457,6 @@ textarea {
 }
 
 @media (max-width: 670px) {
-  .nav .name {
-    display: none;
-  }
-  .navlinks {
-    width: 100%;
-  }
 }
 
 @media (max-width: 544px) {
@@ -446,12 +502,6 @@ textarea {
 }
 
 @media (max-width: 397px) {
-  .nav a {
-    font-size: 12px;
-  }
-  .nav .changeMode {
-    font-size: 16px;
-  }
 }
 
 @media (max-width: 378px) {

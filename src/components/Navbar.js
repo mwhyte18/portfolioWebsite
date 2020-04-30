@@ -1,37 +1,45 @@
-import React, { useEffect } from "react";
+import React, { useEffect, Component } from "react";
 
-const Navbar = () => {
-  useEffect(() => {
-    window.addEventListener("scroll", resizeNavOnScroll);
-  });
+export default class Navbar extends Component {
+  state = {
+    scrolled: false,
+  };
 
-  function resizeNavOnScroll() {
-    const distanceY = window.pageYOffset || document.documentElement.scrollTop,
-      shrinkOn = 60,
-      navbarEl = document.getElementById("js-navbar");
-
-    if (distanceY >= shrinkOn) {
-      navbarEl.classList.add("smaller");
-    } else if (distanceY < shrinkOn) {
-      navbarEl.classList.remove("smaller");
-    }
+  componentDidMount() {
+    window.addEventListener("scroll", this.navOnScroll);
   }
 
-  return (
-    <div className="nav" id="js-navbar">
-      <div className="name">
-        <a href="/">Marco Whyte</a>
-      </div>
-      <div className="navlinks">
-        <a href="/#about">About Me</a>
-        <a href="/#work">My Work</a>
-        <a href="/#freelance">Freelance</a>
-        <a className="contactlink" href="/contact">
-          Contact
-        </a>
-      </div>
-    </div>
-  );
-};
+  componentWillUnmount() {
+    window.removeEventListener("scroll", this.navOnScroll);
+  }
 
-export default Navbar;
+  navOnScroll = () => {
+    if (window.scrollY > 20) {
+      this.setState({ scrolled: true });
+    } else {
+      this.setState({ scrolled: false });
+    }
+  };
+  render() {
+    const { scrolled } = this.state;
+    return (
+      <nav className={scrolled ? "nav scroll" : "nav"}>
+        <div className="nav-container">
+          <div className="brand">
+            <a href="/">
+              <span className="text">Marco Whyte</span>
+            </a>
+          </div>
+          <div className="links">
+            <a href="/#about">About Me</a>
+            <a href="/#work">My Work</a>
+            <a href="/#freelance">Freelance</a>
+            <a className="contactlink" href="/contact">
+              Contact
+            </a>
+          </div>
+        </div>
+      </nav>
+    );
+  }
+}
