@@ -11,118 +11,129 @@ const Work = () => {
   return (
     <div className="work" id="work">
       <h1>My Work</h1>
-      <div className="task">
-        <div
-          onClick={() => window.open("https://www.searchify.club", "_blank")}
-          className="nameAndIcon"
-        >
-          <FontAwesomeIcon
-            className="searchify"
-            icon={faSearchengin}
-            size="3x"
-          />
+      <div className="cards">
+        <div className="card">
+          <div className="titleAndIcon">
+            <FontAwesomeIcon
+              className="searchify"
+              icon={faSearchengin}
+              size="2x"
+            />
+            <h2>Searchify</h2>
+          </div>
+          <p>
+            Using the spotify api, this app allows you to explore music, see
+            what music you like and create new playlists based on a song you
+            like.
+          </p>
+          <div className="workButtons">
+            <button className="github">
+              <FontAwesomeIcon icon={faGithub} />
+              {"  "}
+              Open Source
+            </button>
+            <button
+              className="visitSite"
+              onClick={() =>
+                window.open("https://www.searchify.club", "_blank")
+              }
+            >
+              Visit Site
+            </button>
+          </div>
+        </div>
 
-          <h2>Searchify</h2>
-        </div>
-        <p>
-          Using the spotify api, this app allows you to explore music, see what
-          music you like and create new playlists based on a song you like.
-        </p>
-        <div className="icons">
-          <button className="github">
-            <FontAwesomeIcon icon={faGithub} />
-            {"  "}
-            Open Source
-          </button>
-          <button
-            className="visitSite"
-            onClick={() => window.open("https://www.searchify.club", "_blank")}
-          >
-            Visit Site
-          </button>
-        </div>
-      </div>
-      <div className="task">
-        <div
-          onClick={() => window.open("https://www.searchify.club", "_blank")}
-          className="nameAndIcon"
-        >
-          <FontAwesomeIcon
-            className="clipboard"
-            icon={faClipboardList}
-            size="3x"
-          />
+        <div className="card colorRed">
+          <div className="titleAndIcon">
+            <FontAwesomeIcon
+              className="clipboard"
+              icon={faClipboardList}
+              size="2x"
+            />
+            <h2>Login Todo</h2>
+          </div>
+          <p>
+            A todo app where you login, making all your tasks easily accessible.
+            Uses react-redux and node.js.
+          </p>
 
-          <h2>Login Todo App</h2>
+          <div className="workButtons">
+            <button className="github">
+              <FontAwesomeIcon icon={faGithub} />
+              {"  "}
+              Open Source
+            </button>
+            <button
+              className="visitSite"
+              onClick={() =>
+                window.open("https://www.searchify.club", "_blank")
+              }
+            >
+              Visit Site
+            </button>
+          </div>
         </div>
-        <p>
-          A simple login todo app, making all your tasks easily accessible. Uses
-          react-redux and node.js
-        </p>
-        <div className="icons">
-          <button className="github">
-            <FontAwesomeIcon icon={faGithub} />
-            {"  "}
-            Open Source
-          </button>
-          <button
-            className="visitSite"
-            onClick={() => window.open("https://www.searchify.club", "_blank")}
-          >
-            Visit Site
-          </button>
+        <div className="card colorOrange">
+          <div className="cardTextTogether">
+            <div className="titleAndIcon">
+              <FontAwesomeIcon
+                className="faLaptopCode"
+                icon={faQuoteRight}
+                size="2x"
+              />
+              <h2>Quote Generator</h2>
+            </div>
+            <p>
+              A react-redux web app that generates random Kanye quotes and Trump
+              tweets, using kanye.rest api and a Donald Trump api
+            </p>
+          </div>
+          <div className="workButtons">
+            <button className="github">
+              <FontAwesomeIcon icon={faGithub} />
+              {"  "}
+              Open Source
+            </button>
+            <button
+              className="visitSite"
+              onClick={() =>
+                window.open("https://www.searchify.club", "_blank")
+              }
+            >
+              Visit Site
+            </button>
+          </div>
         </div>
-      </div>
-      <div className="task">
-        <div
-          onClick={() => window.open("http://www.google.com", "_blank")}
-          className="nameAndIcon"
-        >
-          <FontAwesomeIcon
-            className="faLaptopCode"
-            icon={faQuoteRight}
-            size="2x"
-          />
-
-          <h2>Quote Generator</h2>
-        </div>
-        <p>
-          A react-redux web app that generates random Kanye quotes and Trump
-          tweets, using kanye.rest api and a Donald Trump api
-        </p>
-        <div className="icons">
-          <button className="github">
-            <FontAwesomeIcon icon={faGithub} />
-            {"  "}
-            Open Source
-          </button>
-          <button className="visitSite">Visit Site</button>
-        </div>
-      </div>
-      <div className="task">
-        <div
-          onClick={() => window.open("http://www.google.com", "_blank")}
-          className="nameAndIcon"
-        >
-          <FontAwesomeIcon
-            className="faSpaceShuttle"
-            icon={faSpaceShuttle}
-            size="2x"
-          />
-
-          <h2>NASAa Photo</h2>
-        </div>
-        <p>
-          A simple login todo app, using redux and login with backend asd asdfa
-          ja j sdjo aojd jasdoj
-        </p>
-        <div className="icons">
-          <button className="github">
-            <FontAwesomeIcon icon={faGithub} />
-            {"  "}
-            Open Source
-          </button>
-          <button className="visitSite">Visit Site</button>
+        <div className="card colorBlue">
+          <div className="cardTextTogether">
+            <div className="titleAndIcon">
+              <FontAwesomeIcon
+                className="faSpaceShuttle"
+                icon={faSpaceShuttle}
+                size="2x"
+              />
+              <h2>NASA Daily Photo</h2>
+            </div>
+            <p>
+              View NASAs photo of the day with a beautiful interface! Learn
+              about the picture/video and explore past pictures from NASA
+            </p>
+          </div>
+          <div className="workButtons">
+            <button className="github">
+              <FontAwesomeIcon icon={faGithub} />
+              {"  "}
+              Open Source
+            </button>
+            <button
+              className="visitSite"
+              onClick={() =>
+                window.open("https://www.searchify.club", "_blank")
+              }
+            >
+              Visit Site
+            </button>
+          </div>
         </div>
       </div>
     </div>

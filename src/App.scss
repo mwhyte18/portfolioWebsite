@@ -1,6 +1,23 @@
 @import url("https://fonts.googleapis.com/css?family=Baloo+Da+2|Roboto&display=swap");
 
 $myPurple: #6457db;
+$lightGreen: rgba(122, 216, 100, 0.4);
+$cardText: #5f5f5f;
+$lightOrange: linear-gradient(
+  135deg,
+  rgba(255, 195, 66, 0.4),
+  rgba(255, 142, 30, 0.4)
+);
+$lightBlue: linear-gradient(
+  135deg,
+  rgba(88, 177, 255, 0.4),
+  rgba(43, 111, 212, 0.4)
+);
+$lightRed: linear-gradient(
+  135deg,
+  rgba(252, 99, 126, 0.4),
+  rgba(215, 57, 77, 0.4)
+);
 
 .App {
   text-align: center;
@@ -16,7 +33,7 @@ $myPurple: #6457db;
   box-sizing: border-box;
 }
 .center {
-  width: 60%;
+  width: 1300px;
 }
 
 .nav {
@@ -277,39 +294,110 @@ textarea {
 }
 
 .work {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  .github {
-    color: #24292e;
-    background-color: #eff3f6;
-    border: none;
-    padding: 3% 5%;
-    border: 1px solid #cdcfd1;
-    cursor: pointer;
-    overflow: visible;
-    white-space: nowrap;
-    margin-right: 5%;
-    width: 100%;
-    border-radius: 5px;
-  }
-  .github:hover {
-    border: 1px solid #959596;
-    background-color: #e3e6e9;
-  }
-  .task {
+  .cards {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
     width: 100%;
-    border-bottom: 1px solid lightgrey;
   }
-  p {
-    width: 46%;
+
+  .card {
+    color: $cardText;
+    width: 340px;
+    height: 300px;
+    margin: 3%;
+    background-color: $lightGreen;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px 0px rgba(82, 82, 82, 0.75);
+    transition: all 150ms ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    p {
+      width: 85%;
+      font-size: 1.1rem;
+      margin: 0;
+    }
+    .cardTextTogether {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+    .workButtons {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 100%;
+    }
+    .github {
+      color: #24292e;
+      background-color: #eff3f6;
+      border: none;
+      padding: 3% 5%;
+      border: 1px solid #cdcfd1;
+      cursor: pointer;
+      overflow: visible;
+      white-space: nowrap;
+      margin-right: 5%;
+      width: 43%;
+      border-radius: 5px;
+    }
+    .github:hover {
+      border: 1px solid #959596;
+      background-color: #e3e6e9;
+    }
+    .titleAndIcon {
+      display: flex;
+      align-items: center;
+    }
+    .visitSite {
+      text-decoration: none;
+      color: white;
+      background-color: $myPurple;
+      border: none;
+      padding: 3% 5%;
+      cursor: pointer;
+      width: 37%;
+      border-radius: 5px;
+      border: 1px solid #5183f5;
+      overflow: visible;
+      white-space: nowrap;
+    }
+    .visitSite:hover {
+      background-color: #473abd;
+      border: 1px solid #1e1a41;
+    }
+    h2 {
+      margin: 0;
+      margin-bottom: 4%;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+    h2:hover {
+      color: $myPurple;
+    }
   }
-  h2:hover {
-    color: $myPurple;
+  .colorRed {
+    background: $lightRed;
   }
+  .colorOrange {
+    background: $lightOrange;
+  }
+  .colorBlue {
+    background: $lightBlue;
+  }
+  .card:hover {
+    top: -3px;
+    left: -3px;
+    box-shadow: 3px 3px 15px 0px rgba(82, 82, 82, 0.85);
+  }
+
   .icons {
     display: flex;
     justify-content: space-between;
@@ -329,36 +417,20 @@ textarea {
 
   .clipboard {
     color: #654321;
-    padding-right: 3%;
+    margin-right: 7%;
   }
   .searchify {
     color: #1db954;
-    padding-right: 3%;
+    margin-right: 7%;
   }
 
   .faLaptopCode {
-    color: #dfa417;
-    padding-right: 3%;
+    color: #003b59;
+    margin-right: 7%;
   }
   .faSpaceShuttle {
     color: #003b59;
-    padding-right: 3%;
-  }
-  .visitSite {
-    text-decoration: none;
-    color: white;
-    background-color: $myPurple;
-    border: none;
-    padding: 3% 5%;
-    cursor: pointer;
-    border-radius: 5px;
-    border: 1px solid #5183f5;
-    overflow: visible;
-    white-space: nowrap;
-  }
-  .visitSite:hover {
-    background-color: #322b6d;
-    border: 1px solid #1e1a41;
+    margin-right: 7%;
   }
 }
 .freelance {
@@ -368,47 +440,12 @@ textarea {
   }
 }
 
-@media (max-width: 1690px) {
-  .center {
-    width: 70%;
-  }
-}
-
-@media (max-width: 1465px) {
-  .center {
-    width: 80%;
-  }
-}
-@media (max-width: 1274px) {
-  .center {
-    width: 93%;
-  }
-}
-@media (max-width: 1096px) {
-  .icons {
-    padding-right: 2%;
-  }
-}
-
 @media (max-width: 964px) {
-  .icons {
-    padding-right: 4%;
-  }
   .titles {
     width: 20%;
   }
 }
-@media (max-width: 880px) {
-}
 
-@media (max-width: 874px) {
-  .icons {
-    padding-right: 7%;
-  }
-  .work p {
-    width: 42%;
-  }
-}
 @media (max-width: 769px) {
   .freelance .modernize {
     width: 90%;
@@ -426,55 +463,12 @@ textarea {
     display: flex;
     justify-content: space-evenly;
   }
-  .work p {
-    display: none;
-  }
-  .nameAndIcon {
-    width: 40%;
-    margin: 0;
-    padding: 0;
-  }
-  .work .icons {
-    width: 40%;
-    margin: 0;
-    padding: 0;
-    padding-right: 7%;
-    margin-right: 3%;
-  }
-  .task {
-    display: flex;
-    justify-content: space-between;
-    margin: 0;
-    padding: 0;
-    overflow: visible;
-  }
-  .faLaptopCode {
-    padding-left: 3%;
-  }
   .about .mySection {
     width: 70%;
   }
 }
 
-@media (max-width: 670px) {
-}
-
 @media (max-width: 544px) {
-  .work h2 {
-    font-size: 15px;
-  }
-  .clipboard {
-    font-size: 25px;
-  }
-  .searchify {
-    font-size: 25px;
-  }
-  .faLaptopCode {
-    font-size: 20px;
-  }
-  .faSpaceShuttle {
-    font-size: 20px;
-  }
   .about .mySection {
     width: 90%;
   }
@@ -493,22 +487,5 @@ textarea {
   }
   .footer .totop {
     font-size: 25px;
-  }
-}
-@media (max-width: 442px) {
-  .work .icons {
-    padding-right: 14%;
-  }
-}
-
-@media (max-width: 397px) {
-}
-
-@media (max-width: 378px) {
-  .work button {
-    font-size: 10px;
-  }
-  .work .icons {
-    padding-right: 12%;
   }
 }
