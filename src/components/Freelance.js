@@ -16,7 +16,7 @@ const Freelance = () => {
         <img
           onClick={() => window.open("https://modernizeme.com/", "_blank")}
           src={modernizeme}
-          className="modernize"
+          className="modernize img-shadow-1"
           alt="ModernizeMe logo, create affordable digital content"
         />
       </div>

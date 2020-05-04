@@ -162,23 +162,10 @@ img {
     width: 50%;
   }
 
-  .img-hover-zoom {
-    overflow: hidden;
+  .aboutImage {
     width: 40%;
   }
-  /* [2] Transition property for smooth transformation of images */
-  .img-hover-zoom img {
-    transition: transform 0.5s ease;
-  }
 
-  /* [3] Finally, transforming the image when container gets hovered */
-  .img-hover-zoom:hover img {
-    transform: scale(3);
-  }
-
-  img {
-    width: 100%;
-  }
   .github {
     color: #24292e;
     background-color: #eff3f6;
@@ -439,10 +426,59 @@ textarea {
     cursor: pointer;
   }
 }
+.img-shadow-1 {
+  -webkit-box-shadow: 0 28px 16px -26px black;
+  -moz-box-shadow: 0 28px 16px -26px black;
+  box-shadow: 0 28px 16px -26px black;
+}
 
-@media (max-width: 964px) {
-  .titles {
-    width: 20%;
+.img-shadow-1:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+
+  -webkit-box-shadow: 0 58px 36px -56px black;
+  -moz-box-shadow: 0 58px 36px -56px black;
+  box-shadow: 0 58px 36px -56px black;
+}
+
+.img-shadow-1 {
+  transition: all 0.6s ease-in-out;
+  -webkit-transition: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
+  -ms-transition: all 0.6s ease-in-out;
+  -o-transition: all 0.6s ease-in-out;
+}
+
+.img-shadow-1:hover {
+  transition: all 0.6s ease-in-out;
+  -webkit-transition: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
+  -ms-transition: all 0.6s ease-in-out;
+  -o-transition: all 0.6s ease-in-out;
+}
+
+@media (max-width: 1381px) {
+  .center {
+    width: 93%;
+  }
+}
+
+@media (max-width: 831px) {
+  .aboutImage {
+    display: none;
+  }
+  .about {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .about .mySection {
+    width: 70%;
+  }
+  .card {
+    width: 44% !important;
   }
 }
 
@@ -455,16 +491,41 @@ textarea {
   }
 }
 
-@media (max-width: 743px) {
-  .img-hover-zoom {
-    display: none;
+@media (max-width: 765px) {
+  .card {
+    width: 80% !important;
+    height: 290px !important;
   }
-  .about {
-    display: flex;
-    justify-content: space-evenly;
+  .brand {
+    display: none !important;
   }
-  .about .mySection {
-    width: 70%;
+  .links {
+    width: 100% !important;
+    justify-content: space-evenly !important;
+    align-items: center !important;
+  }
+  .footer .icons {
+    width: 90px;
+    font-size: 13px;
+  }
+  .footer .titles {
+    width: 110px;
+  }
+  .footer .totop {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 592px) {
+  .links {
+    a {
+      font-size: 1rem !important;
+      padding: 10px !important;
+      white-space: nowrap;
+    }
+  }
+  .center {
+    width: 95%;
   }
 }
 
@@ -472,20 +533,17 @@ textarea {
   .about .mySection {
     width: 90%;
   }
-  .footer .icons {
-    width: 15%;
-  }
 }
 
-@media (max-width: 488px) {
-  .footer .icons {
-    width: 19%;
-    font-size: 13px;
+@media (max-width: 410px) {
+  .links {
+    justify-content: space-around !important;
+    a {
+      margin: 1% !important;
+      font-size: 0.8rem !important;
+    }
   }
-  .footer .titles {
-    width: 26%;
-  }
-  .footer .totop {
-    font-size: 25px;
+  .github {
+    width: 50% !important;
   }
 }

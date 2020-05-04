@@ -26,9 +26,11 @@ const About = () => {
           </button>
         </div>
       </div>
-      <div className="img-hover-zoom">
-        <img src={computer} alt="computer with react code" />
-      </div>
+      <img
+        src={computer}
+        className="aboutImage img-shadow-1"
+        alt="computer with react code"
+      />
     </div>
   );
 };

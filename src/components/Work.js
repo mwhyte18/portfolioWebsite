@@ -112,7 +112,69 @@ const Work = () => {
                 icon={faSpaceShuttle}
                 size="2x"
               />
-              <h2>NASA Daily Photo</h2>
+              <h2>Explore Space</h2>
+            </div>
+            <p>
+              View NASAs photo of the day with a beautiful interface! Learn
+              about the picture/video and explore past pictures from NASA
+            </p>
+          </div>
+          <div className="workButtons">
+            <button className="github">
+              <FontAwesomeIcon icon={faGithub} />
+              {"  "}
+              Open Source
+            </button>
+            <button
+              className="visitSite"
+              onClick={() =>
+                window.open("https://www.searchify.club", "_blank")
+              }
+            >
+              Visit Site
+            </button>
+          </div>
+        </div>
+        <div className="card colorBlue">
+          <div className="cardTextTogether">
+            <div className="titleAndIcon">
+              <FontAwesomeIcon
+                className="faSpaceShuttle"
+                icon={faSpaceShuttle}
+                size="2x"
+              />
+              <h2>Explore Space</h2>
+            </div>
+            <p>
+              View NASAs photo of the day with a beautiful interface! Learn
+              about the picture/video and explore past pictures from NASA
+            </p>
+          </div>
+          <div className="workButtons">
+            <button className="github">
+              <FontAwesomeIcon icon={faGithub} />
+              {"  "}
+              Open Source
+            </button>
+            <button
+              className="visitSite"
+              onClick={() =>
+                window.open("https://www.searchify.club", "_blank")
+              }
+            >
+              Visit Site
+            </button>
+          </div>
+        </div>
+        <div className="card colorBlue">
+          <div className="cardTextTogether">
+            <div className="titleAndIcon">
+              <FontAwesomeIcon
+                className="faSpaceShuttle"
+                icon={faSpaceShuttle}
+                size="2x"
+              />
+              <h2>Explore Space</h2>
             </div>
             <p>
               View NASAs photo of the day with a beautiful interface! Learn
