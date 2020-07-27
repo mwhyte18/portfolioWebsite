@@ -1,4 +1,5 @@
 import React, { useEffect, Component } from "react";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 export default class Navbar extends Component {
   state = {
@@ -24,19 +25,66 @@ export default class Navbar extends Component {
     const { scrolled } = this.state;
     return (
       <nav className={scrolled ? "nav scroll" : "nav"}>
-        <div className="nav-container">
+        <div className="nav-container" id="topofpage">
           <div className="brand">
-            <a href="/">
-              <span className="text">Marco Whyte</span>
-            </a>
+            <Link
+              className="text"
+              activeClass="active"
+              to="top"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              style={{ cursor: "pointer" }}
+            >
+              Marco Whyte
+            </Link>
           </div>
           <div className="links">
-            <a href="/#about">About Me</a>
-            <a href="/#work">My Work</a>
-            <a href="/#freelance">Freelance</a>
-            <a className="contactlink" href="/contact">
+            <Link
+              activeClass="active"
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              style={{ cursor: "pointer" }}
+            >
+              About Me
+            </Link>
+            <Link
+              activeClass="active"
+              to="work"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              style={{ cursor: "pointer" }}
+            >
+              My Work
+            </Link>
+            <Link
+              activeClass="active"
+              to="freelance"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              style={{ cursor: "pointer" }}
+            >
+              Freelance
+            </Link>
+            <Link
+              activeClass="active"
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              style={{ cursor: "pointer" }}
+            >
               Contact
-            </a>
+            </Link>
           </div>
         </div>
       </nav>

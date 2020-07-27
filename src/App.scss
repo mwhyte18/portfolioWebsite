@@ -96,7 +96,7 @@ $lightRed: linear-gradient(
     a {
       font-size: 1.2rem;
       margin: 0 0.5rem;
-      padding: 1rem;
+      padding: 0.5rem 1rem;
       border-bottom: 2px solid transparent;
       display: flex;
       align-items: center;
@@ -123,7 +123,9 @@ $lightRed: linear-gradient(
   margin-right: 1rem;
   margin-bottom: 0;
 }
-
+.freelancetocontact {
+  color: $myPurple;
+}
 .navlinks {
   width: 45%;
   display: flex;
@@ -155,15 +157,18 @@ img {
 }
 .about {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   margin-top: 170px;
+  padding-bottom: 100px;
   .mySection {
     width: 50%;
   }
 
   .aboutImage {
-    width: 40%;
+    width: 250px;
+    margin-right: 40px;
+    border-radius: 15%;
   }
 
   .github {
@@ -199,6 +204,8 @@ img {
 .footer {
   display: flex;
   justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
   align-items: center;
   padding: 1% 0;
   margin-top: 10%;
@@ -234,6 +241,11 @@ img {
 .rotate:hover {
   animation: fa-spin 2s infinite linear;
   color: $myPurple;
+}
+@media (max-width: 1098px) {
+  .footer {
+    width: 99%;
+  }
 }
 // The animation bellow is taken from font-awesome.css
 @-webkit-keyframes fa-spin {
@@ -281,6 +293,8 @@ textarea {
 }
 
 .work {
+  padding-top: 20px;
+  padding-bottom: 100px;
   .cards {
     display: flex;
     justify-content: space-evenly;
@@ -291,24 +305,27 @@ textarea {
 
   .card {
     color: $cardText;
+    border: 1px solid #e6eaec;
     width: 340px;
     height: 300px;
     margin: 3%;
-    background-color: $lightGreen;
+    background-color: white;
     position: relative;
-    top: 0px;
-    left: 0px;
-    border-radius: 20px;
-    box-shadow: 1px 1px 5px 0px rgba(82, 82, 82, 0.75);
+    border-radius: 7px;
     transition: all 150ms ease-in-out;
+    box-shadow: 0 10px 26px rgba(100, 110, 140, 0.1),
+      0 2px 4px rgba(100, 110, 140, 0.15);
+    border-bottom: none;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    padding-bottom: 23px;
     p {
       width: 85%;
       font-size: 1.1rem;
       margin: 0;
+      margin-bottom: 40px;
     }
     .cardTextTogether {
       display: flex;
@@ -342,6 +359,13 @@ textarea {
     .titleAndIcon {
       display: flex;
       align-items: center;
+      justify-content: center;
+      width: 100%;
+      margin-bottom: 20px;
+      margin-top: 20px;
+      h2 {
+        margin: 0;
+      }
     }
     .visitSite {
       text-decoration: none;
@@ -370,19 +394,23 @@ textarea {
       color: $myPurple;
     }
   }
-  .colorRed {
-    background: $lightRed;
-  }
-  .colorOrange {
-    background: $lightOrange;
-  }
-  .colorBlue {
-    background: $lightBlue;
-  }
+  // .colorRed {
+  //   background: $lightRed;
+  // }
+  // .colorOrange {
+  //   background: $lightOrange;
+  // }
+  // .colorBlue {
+  //   background: $lightBlue;
+  // }
+  // .colorPurple {
+  //   background: #ebaffd;
+  // }
   .card:hover {
-    top: -3px;
-    left: -3px;
-    box-shadow: 3px 3px 15px 0px rgba(82, 82, 82, 0.85);
+    transform: translate3D(0, -1px, 0);
+    box-shadow: 0 8px 22px rgba(100, 110, 140, 0.2),
+      0 5px 18px rgba(100, 110, 140, 0.25);
+    background-color: #fbfdff;
   }
 
   .icons {
@@ -419,10 +447,24 @@ textarea {
     color: #003b59;
     margin-right: 7%;
   }
+  .faShield {
+    color: #b377f6;
+    margin-right: 7%;
+  }
+}
+.hyperLink {
+  cursor: pointer;
+  color: #6457db;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 .freelance {
+  padding-top: 20px;
+  padding-bottom: 50px;
   .modernize {
-    width: 60%;
+    margin-top: 30px;
+    width: 50%;
     cursor: pointer;
   }
 }
@@ -459,13 +501,112 @@ textarea {
   -ms-transition: all 0.6s ease-in-out;
   -o-transition: all 0.6s ease-in-out;
 }
+//contact
+
+.splitthreeways {
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+  align-items: center;
+  margin: 0 auto;
+}
+.descriptioncontact {
+  width: 30%;
+}
+.contact {
+  width: 100%;
+  padding-top: 50px;
+  p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.emailandphone {
+  width: 30%;
+  text-align: center;
+}
+.formInput {
+  margin-top: 20px;
+  display: block;
+  width: 500px;
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  outline: none;
+  transition: border-color 0.25s ease-in-out, box-shadow 0.15s ease-in-out;
+  &:focus {
+    border-color: $myPurple;
+  }
+}
+.formArea {
+  font-family: "Baloo Da 2", cursive;
+  margin-top: 20px;
+  display: block;
+  width: 500px;
+  height: 150px;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  outline: none;
+  transition: border-color 0.25s ease-in-out, box-shadow 0.15s ease-in-out;
+  &:focus {
+    border-color: $myPurple;
+  }
+  overflow: auto;
+  resize: vertical;
+}
+.submitForm {
+  margin-top: 20px;
+  text-decoration: none;
+  color: white;
+  background-color: $myPurple;
+  border: none;
+  padding: 10px 40px;
+  cursor: pointer;
+  width: 200px;
+  border-radius: 5px;
+  overflow: visible;
+  white-space: nowrap;
+}
+.submitForm:hover {
+  background-color: #473abd;
+}
 
 @media (max-width: 1381px) {
   .center {
     width: 93%;
   }
 }
-
+@media (max-width: 944px) {
+  .footer {
+    .icons {
+      width: 100px;
+    }
+  }
+  .splitthreeways {
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+  }
+  .descriptioncontact {
+    width: 100%;
+  }
+  .emailandphone {
+    width: 100%;
+  }
+}
 @media (max-width: 831px) {
   .aboutImage {
     display: none;
@@ -486,15 +627,18 @@ textarea {
   .freelance .modernize {
     width: 90%;
   }
-  .footer .icons {
-    width: 13%;
-  }
 }
 
 @media (max-width: 765px) {
   .card {
     width: 80% !important;
-    height: 290px !important;
+    height: 230px !important;
+    p {
+      margin-bottom: 2px !important;
+    }
+    .titleAndIcon {
+      margin-bottom: 2px !important;
+    }
   }
   .brand {
     display: none !important;
@@ -503,16 +647,6 @@ textarea {
     width: 100% !important;
     justify-content: space-evenly !important;
     align-items: center !important;
-  }
-  .footer .icons {
-    width: 90px;
-    font-size: 13px;
-  }
-  .footer .titles {
-    width: 110px;
-  }
-  .footer .totop {
-    font-size: 25px;
   }
 }
 
@@ -527,6 +661,15 @@ textarea {
   .center {
     width: 95%;
   }
+  .splitthreeways {
+    width: 300px;
+  }
+  .formInput {
+    width: 300px;
+  }
+  .formArea {
+    width: 300px;
+  }
 }
 
 @media (max-width: 544px) {
@@ -534,7 +677,12 @@ textarea {
     width: 90%;
   }
 }
-
+@media (max-width: 500px) {
+  .card {
+    height: 260px !important;
+    width: 90% !important;
+  }
+}
 @media (max-width: 410px) {
   .links {
     justify-content: space-around !important;

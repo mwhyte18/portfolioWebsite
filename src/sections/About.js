@@ -1,5 +1,5 @@
 import React from "react";
-import computer from "./computer.jpg";
+import profilePic from "../images/profilepic.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
@@ -27,7 +27,7 @@ const About = () => {
         </div>
       </div>
       <img
-        src={computer}
+        src={profilePic}
         className="aboutImage img-shadow-1"
         alt="computer with react code"
       />
