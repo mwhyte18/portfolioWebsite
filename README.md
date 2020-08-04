@@ -8,6 +8,7 @@ Welcome to my Portfolio, here you can find some of my past work as well as infor
 Feel free to contact me in the contact section of this website!
 
 ## Contributing to Marco Whyte's Portfolio
+
 To contribute to my portfolio, follow these steps:
 
 1. Fork this repository.
@@ -20,11 +21,8 @@ Alternatively see the GitHub documentation on [creating a pull request](https://
 
 ## Contributors
 
-* [@marwhyte](https://github.com/marwhyte) 📖
-
-
+- [@marwhyte](https://github.com/marwhyte) 📖
 
 ## Contact
 
 If you want to contact me visit [my portfolio!](http://marcowhyte.com)
-
