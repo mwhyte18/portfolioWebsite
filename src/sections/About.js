@@ -11,7 +11,7 @@ const About = () => {
         <h1>Hello, I'm Marco</h1>
         <p>
           I am a full stack web developer, focusing on javascript, react.js,
-          react-redux and node.js
+          react-redux, typescript and node.js
         </p>
         <div className="buttonspacing">
           <button className="github">

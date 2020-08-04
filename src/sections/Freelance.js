@@ -8,9 +8,9 @@ const Freelance = () => {
       <p>
         <span className="hyperLink">ModernizeMe</span> is a freelance agency I
         created that provides quality yet affordable web solutions. Feel free to
-        check out some of the work I have done, including farms, wedding
-        services and hotels. If you have any questions, you can reach out on my
-        freelance website or at the contact section below.
+        check out some of the work I have done, including medical products,
+        wedding services and hotels. If you have any questions, you can reach
+        out on my freelance website or at the contact section below.
       </p>
       <div>
         <img

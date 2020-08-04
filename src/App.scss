@@ -443,6 +443,12 @@ textarea {
     color: #003b59;
     margin-right: 7%;
   }
+  .red {
+    color: rgb(207, 0, 0);
+  }
+  .yellow {
+    color: rgb(228, 149, 3) !important;
+  }
   .faSpaceShuttle {
     color: #003b59;
     margin-right: 7%;
@@ -527,6 +533,7 @@ textarea {
   text-align: center;
 }
 .formInput {
+  font-family: "Baloo Da 2", cursive;
   margin-top: 20px;
   display: block;
   width: 500px;
