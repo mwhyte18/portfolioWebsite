@@ -22,8 +22,20 @@ const Footer = () => {
         </Link>
       </div>
       <div className="icons">
-        <FontAwesomeIcon className="rotate" icon={faGithub} size="2x" />
-        <FontAwesomeIcon className="rotate" icon={faLinkedin} size="2x" />
+        <FontAwesomeIcon
+          onClick={() => window.open("https://github.com/marwhyte", "_blank")}
+          className="rotate"
+          icon={faGithub}
+          size="2x"
+        />
+        <FontAwesomeIcon
+          onClick={() =>
+            window.open("https://www.linkedin.com/in/marco-whyte/", "_blank")
+          }
+          className="rotate"
+          icon={faLinkedin}
+          size="2x"
+        />
       </div>
     </div>
   );
