@@ -7,15 +7,6 @@ Welcome to my Portfolio, here you can find some of my past work as well as infor
 
 Feel free to contact me in the contact section of this website!
 
-## Prerequisites
-
-Before you begin, ensure you have met the following requirements:
-<!--- These are just example requirements. Add, duplicate or remove as required --->
-* You have installed the latest version of `<coding_language/dependency/requirement_1>`
-* You have a `<Windows/Linux/Mac>` machine. State which OS is supported/which is not.
-* You have read `<guide/link/documentation_related_to_project>`.
-
-
 ## Contributing to Marco Whyte's Portfolio
 To contribute to my portfolio, follow these steps:
 
