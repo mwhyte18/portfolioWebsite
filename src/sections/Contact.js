@@ -30,7 +30,7 @@ const Contact = () => {
               icon={faPhone}
               style={{ marginRight: 10, color: "#6457db", fontSize: 20 }}
             />
-            +1 901 830 9504
+            +1 901 830 8504
           </p>
         </div>
       </div>
