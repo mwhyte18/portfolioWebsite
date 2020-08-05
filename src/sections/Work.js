@@ -4,7 +4,6 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faClipboardList } from "@fortawesome/free-solid-svg-icons";
 import { faHeartbeat } from "@fortawesome/free-solid-svg-icons";
 import { faSpaceShuttle } from "@fortawesome/free-solid-svg-icons";
-import { faQuoteRight } from "@fortawesome/free-solid-svg-icons";
 import { faSearchengin } from "@fortawesome/free-brands-svg-icons";
 import { faShieldAlt } from "@fortawesome/free-solid-svg-icons";
 import { faGrinBeam } from "@fortawesome/free-solid-svg-icons";
