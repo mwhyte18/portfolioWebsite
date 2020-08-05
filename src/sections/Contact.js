@@ -21,7 +21,7 @@ const Contact = () => {
               icon={faEnvelopeOpenText}
               style={{ marginRight: 10, color: "#6457db", fontSize: 20 }}
             />
-            marcowhyte2@gmail.com
+            marcolwhyte@gmail.com
           </p>
           <p>
             <FontAwesomeIcon

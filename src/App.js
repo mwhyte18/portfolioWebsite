@@ -6,7 +6,7 @@ import Navbar from "./components/Navbar";
 import Work from "./sections/Work";
 import Freelance from "./sections/Freelance";
 import Footer from "./sections/Footer";
-
+import Skills from "./sections/Skills";
 function App() {
   return (
     <div className="App">
@@ -15,6 +15,7 @@ function App() {
         <About />
         <Work />
         <Freelance />
+        <Skills />
         <Contact />
         <Footer />
       </div>

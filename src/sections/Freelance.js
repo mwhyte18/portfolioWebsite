@@ -1,5 +1,6 @@
 import React from "react";
 import modernizeme from "../images/modernizeme.PNG";
+import { Link } from "react-scroll";
 
 const Freelance = () => {
   return (
@@ -10,7 +11,19 @@ const Freelance = () => {
         created that provides quality yet affordable web solutions. Feel free to
         check out some of the work I have done, including medical products,
         wedding services and hotels. If you have any questions, you can reach
-        out on my freelance website or at the contact section below.
+        out on my freelance website or at the contact section{" "}
+        <Link
+          activeClass=""
+          to="top"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          className="purp"
+          duration={500}
+          style={{ cursor: "pointer", padding: 0 }}
+        >
+          below.
+        </Link>
       </p>
       <div>
         <img
