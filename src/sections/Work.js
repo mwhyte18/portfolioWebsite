@@ -119,7 +119,7 @@ const Work = () => {
             </h2>
           </div>
           <p>
-            An aesthetically pleasing todo app, which saves all your tasks to
+            An aesthetically pleasing todo app, that saves all your tasks to
             your browser.
           </p>
 
@@ -164,7 +164,7 @@ const Work = () => {
               </h2>
             </div>
             <p>
-              A react app that simulates Connway's Game of Life, where cells
+              A React app that simulates Connway's Game of Life, where cells
               live or die based off of their neighbors.
             </p>
           </div>
@@ -243,7 +243,7 @@ const Work = () => {
               />
               <h2>Portfolio</h2>
             </div>
-            <p>My portfolio, made with react and styled with scss.</p>
+            <p>My portfolio, made with React and styled with SASS.</p>
           </div>
           <div className="workButtons">
             <button
