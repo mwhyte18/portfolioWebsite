@@ -76,6 +76,17 @@ export default class Navbar extends Component {
             </Link>
             <Link
               activeClass="active"
+              to="skills"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              style={{ cursor: "pointer" }}
+            >
+              Skills
+            </Link>
+            <Link
+              activeClass="active"
               to="contact"
               spy={true}
               smooth={true}
