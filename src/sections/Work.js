@@ -29,9 +29,12 @@ const Work = () => {
             </h2>
           </div>
           <p>
-            Explore music, see what music you enjoy and create playlists based
-            off those songs!<br></br>{" "}
-            <span style={{ fontSize: 14 }}>*Requires a spotify account</span>
+            Serves you the best playlists based on your favorite tracks!{" "}
+            <br></br>{" "}
+            <span style={{ fontSize: 14, color: "#6457db" }}>
+              *Requires a spotify account <br></br>
+              React - Node - SASS - OAuth
+            </span>{" "}
           </p>
 
           <div className="workButtons">
@@ -74,8 +77,8 @@ const Work = () => {
               Hire people that helped build your codebase and contact them
               quickly with a customizable email template.
               <br></br>
-              <span style={{ fontSize: 14 }}>
-                Typescript | React | Node.js | Redux
+              <span style={{ fontSize: 14, color: "#6457db" }}>
+                Typescript - React - Node - Redux - OAuth
               </span>
             </p>
           </div>
@@ -121,6 +124,8 @@ const Work = () => {
           <p>
             An aesthetically pleasing todo app, that saves all your tasks to
             your browser.
+            <br></br>
+            <span style={{ fontSize: 14, color: "#6457db" }}>React - SASS</span>
           </p>
 
           <div className="workButtons">
@@ -163,8 +168,8 @@ const Work = () => {
             <p>
               Helps Social Workers match foster children to homes by connecting
               them with extended family <br></br>
-              <span style={{ fontSize: 14 }}>
-                Typescript | Redux | React Native
+              <span style={{ fontSize: 14, color: "#6457db" }}>
+                Typescript - Redux - React Native
               </span>
             </p>
           </div>
@@ -215,6 +220,10 @@ const Work = () => {
             <p>
               A React app that simulates Connway's Game of Life, where cells
               live or die based off of their neighbors.
+              <br></br>
+              <span style={{ fontSize: 14, color: "#6457db" }}>
+                Javascript | React | SASS
+              </span>
             </p>
           </div>
           <div className="workButtons">
@@ -255,7 +264,13 @@ const Work = () => {
               />
               <h2>Portfolio</h2>
             </div>
-            <p>My portfolio, made with React and styled with SASS.</p>
+            <p>
+              This site, fully developed and styled.
+              <br></br>
+              <span style={{ fontSize: 14, color: "#6457db" }}>
+                React | SASS
+              </span>
+            </p>
           </div>
           <div className="workButtons">
             <button
