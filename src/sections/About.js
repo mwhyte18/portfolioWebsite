@@ -20,7 +20,7 @@ const About = () => {
           >
             <FontAwesomeIcon icon={faGithub} />
             {"  "}
-            mwhyte18
+            marwhyte
           </button>
           <button
             className="linkedin"
