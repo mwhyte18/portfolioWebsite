@@ -7,13 +7,21 @@ import { faUserFriends } from "@fortawesome/free-solid-svg-icons";
 import { faSearchengin } from "@fortawesome/free-brands-svg-icons";
 import { faShieldAlt } from "@fortawesome/free-solid-svg-icons";
 import { faGrinBeam } from "@fortawesome/free-solid-svg-icons";
+import { faStar } from "@fortawesome/free-solid-svg-icons";
 
 const Work = () => {
   return (
     <div className="work" id="work">
       <h1>My Work</h1>
+      <p>
+        {" "}
+        Personal Projects:{" "}
+        <FontAwesomeIcon icon={faStar} style={{ color: "gold" }} />
+      </p>
+
       <div className="cards">
         <div className="card">
+          <FontAwesomeIcon icon={faStar} className="topRightStar" />
           <div className="titleAndIcon">
             <FontAwesomeIcon
               className="searchify"
@@ -33,7 +41,7 @@ const Work = () => {
             <br></br>{" "}
             <span style={{ fontSize: 14, color: "#6457db" }}>
               *Requires a spotify account <br></br>
-              React - Node - SASS - OAuth
+              React - Node - SASS
             </span>{" "}
           </p>
 
@@ -58,6 +66,8 @@ const Work = () => {
           </div>
         </div>
         <div className="card">
+          <FontAwesomeIcon icon={faStar} className="topRightStar" />
+
           <div className="cardTextTogether">
             <div className="titleAndIcon">
               <FontAwesomeIcon
@@ -74,11 +84,11 @@ const Work = () => {
               </h2>
             </div>
             <p>
-              Hire people that helped build your codebase and contact them
-              quickly with a customizable email template.
+              Hire people that helped make your codebase possible and contact
+              them efficiently.
               <br></br>
               <span style={{ fontSize: 14, color: "#6457db" }}>
-                Typescript - React - Node - Redux - OAuth
+                Typescript - React - Node - Redux
               </span>
             </p>
           </div>
@@ -100,49 +110,6 @@ const Work = () => {
               className="visitSite"
               onClick={() =>
                 window.open("https://hirecontributors.club", "_blank")
-              }
-            >
-              Visit Site
-            </button>
-          </div>
-        </div>
-        <div className="card">
-          <div className="titleAndIcon">
-            <FontAwesomeIcon
-              className="clipboard"
-              icon={faClipboardList}
-              size="2x"
-            />
-            <h2
-              onClick={() =>
-                window.open("https://www.pleasanttodos.club", "_blank")
-              }
-            >
-              PleasantTodos
-            </h2>
-          </div>
-          <p>
-            An aesthetically pleasing todo app, that saves all your tasks to
-            your browser.
-            <br></br>
-            <span style={{ fontSize: 14, color: "#6457db" }}>React - SASS</span>
-          </p>
-
-          <div className="workButtons">
-            <button
-              className="github"
-              onClick={() =>
-                window.open("https://github.com/marwhyte/pleasantTodos")
-              }
-            >
-              <FontAwesomeIcon icon={faGithub} />
-              {"  "}
-              Open Source
-            </button>
-            <button
-              className="visitSite"
-              onClick={() =>
-                window.open("https://www.pleasanttodos.club", "_blank")
               }
             >
               Visit Site
@@ -197,8 +164,55 @@ const Work = () => {
             </button>
           </div>
         </div>
+        <div className="card">
+          <FontAwesomeIcon icon={faStar} className="topRightStar" />
+
+          <div className="titleAndIcon">
+            <FontAwesomeIcon
+              className="clipboard"
+              icon={faClipboardList}
+              size="2x"
+            />
+            <h2
+              onClick={() =>
+                window.open("https://www.pleasanttodos.club", "_blank")
+              }
+            >
+              PleasantTodos
+            </h2>
+          </div>
+          <p>
+            An aesthetically pleasing todo app, that saves all your tasks to
+            your browser.
+            <br></br>
+            <span style={{ fontSize: 14, color: "#6457db" }}>React - SASS</span>
+          </p>
+
+          <div className="workButtons">
+            <button
+              className="github"
+              onClick={() =>
+                window.open("https://github.com/marwhyte/pleasantTodos")
+              }
+            >
+              <FontAwesomeIcon icon={faGithub} />
+              {"  "}
+              Open Source
+            </button>
+            <button
+              className="visitSite"
+              onClick={() =>
+                window.open("https://www.pleasanttodos.club", "_blank")
+              }
+            >
+              Visit Site
+            </button>
+          </div>
+        </div>
 
         <div className="card">
+          <FontAwesomeIcon icon={faStar} className="topRightStar" />
+
           <div className="cardTextTogether">
             <div className="titleAndIcon">
               <FontAwesomeIcon
@@ -218,8 +232,8 @@ const Work = () => {
               </h2>
             </div>
             <p>
-              A React app that simulates Connway's Game of Life, where cells
-              live or die based off of their neighbors.
+              Simulates Connway's Game of Life, where cells live or die based
+              off of their neighbors.
               <br></br>
               <span style={{ fontSize: 14, color: "#6457db" }}>
                 Javascript | React | SASS
@@ -255,6 +269,8 @@ const Work = () => {
         </div>
 
         <div className="card">
+          <FontAwesomeIcon icon={faStar} className="topRightStar" />
+
           <div className="cardTextTogether">
             <div className="titleAndIcon">
               <FontAwesomeIcon
