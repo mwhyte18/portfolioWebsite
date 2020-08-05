@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faClipboardList } from "@fortawesome/free-solid-svg-icons";
 import { faHeartbeat } from "@fortawesome/free-solid-svg-icons";
-import { faSpaceShuttle } from "@fortawesome/free-solid-svg-icons";
+import { faUserFriends } from "@fortawesome/free-solid-svg-icons";
 import { faSearchengin } from "@fortawesome/free-brands-svg-icons";
 import { faShieldAlt } from "@fortawesome/free-solid-svg-icons";
 import { faGrinBeam } from "@fortawesome/free-solid-svg-icons";
@@ -75,7 +75,7 @@ const Work = () => {
               quickly with a customizable email template.
               <br></br>
               <span style={{ fontSize: 14 }}>
-                TypeScript | React-Redux | Node.js
+                Typescript | React | Node.js | Redux
               </span>
             </p>
           </div>
@@ -148,6 +148,55 @@ const Work = () => {
           <div className="cardTextTogether">
             <div className="titleAndIcon">
               <FontAwesomeIcon
+                className="faSpaceShuttle"
+                icon={faUserFriends}
+                size="2x"
+              />
+              <h2
+                onClick={() =>
+                  window.open("https://www.connectourkids.org/", "_blank")
+                }
+              >
+                Connect Our Kids
+              </h2>
+            </div>
+            <p>
+              Helps Social Workers match foster children to homes by connecting
+              them with extended family <br></br>
+              <span style={{ fontSize: 14 }}>
+                Typescript | Redux | React Native
+              </span>
+            </p>
+          </div>
+          <div className="workButtons">
+            <button
+              className="github"
+              onClick={() =>
+                window.open(
+                  "https://github.com/connect-our-kids/mobile-app",
+                  "_blank"
+                )
+              }
+            >
+              <FontAwesomeIcon icon={faGithub} />
+              {"  "}
+              Open Source
+            </button>
+            <button
+              className="visitSite"
+              onClick={() =>
+                window.open("https://www.connectourkids.org/", "_blank")
+              }
+            >
+              Visit Site
+            </button>
+          </div>
+        </div>
+
+        <div className="card">
+          <div className="cardTextTogether">
+            <div className="titleAndIcon">
+              <FontAwesomeIcon
                 className="faLaptopCode red"
                 icon={faHeartbeat}
                 size="2x"
@@ -189,43 +238,6 @@ const Work = () => {
                   "https://hungry-varahamihira-3e8934.netlify.app/",
                   "_blank"
                 )
-              }
-            >
-              Visit Site
-            </button>
-          </div>
-        </div>
-        <div className="card">
-          <div className="cardTextTogether">
-            <div className="titleAndIcon">
-              <FontAwesomeIcon
-                className="faSpaceShuttle"
-                icon={faSpaceShuttle}
-                size="2x"
-              />
-              <h2
-                onClick={() =>
-                  window.open("https://www.searchify.club", "_blank")
-                }
-              >
-                Explore Space
-              </h2>
-            </div>
-            <p>
-              Experience Nasa's photo of the data with a user friendly
-              interface.
-            </p>
-          </div>
-          <div className="workButtons">
-            <button className="github">
-              <FontAwesomeIcon icon={faGithub} />
-              {"  "}
-              Open Source
-            </button>
-            <button
-              className="visitSite"
-              onClick={() =>
-                window.open("https://www.searchify.club", "_blank")
               }
             >
               Visit Site
