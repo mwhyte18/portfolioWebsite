@@ -10,8 +10,8 @@ const About = () => {
       <div className="mySection">
         <h1>Hello, I'm Marco</h1>
         <p>
-          I am a Full Stack Web Developer, focusing on Javascript, React,
-          React-Redux, Typescript and Node
+          I am a Full Stack Web Developer, with a passion for everything
+          front-end related.
         </p>
         <div className="buttonspacing">
           <button
