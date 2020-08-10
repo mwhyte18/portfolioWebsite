@@ -14,7 +14,7 @@ const Freelance = () => {
         out on my freelance website or at the contact section{" "}
         <Link
           activeClass=""
-          to="top"
+          to="contact"
           spy={true}
           smooth={true}
           offset={-70}
