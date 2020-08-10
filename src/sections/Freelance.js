@@ -7,11 +7,17 @@ const Freelance = () => {
     <div className="freelance" id="freelance">
       <h1>ModernizeMe</h1>
       <p>
-        <span className="hyperLink">ModernizeMe</span> is a freelance agency I
-        created that provides quality yet affordable web solutions. Feel free to
-        check out some of the work I have done, including medical products,
-        wedding services and hotels. If you have any questions, you can reach
-        out on my freelance website or at the contact section{" "}
+        <span
+          className="hyperLink"
+          onClick={() => window.open("https://modernizeme.club/", "_blank")}
+        >
+          ModernizeMe
+        </span>{" "}
+        is a freelance agency I created that provides quality yet affordable web
+        solutions. Feel free to check out some of the work I have done,
+        including medical products, wedding services and hotels. If you have any
+        questions, you can reach out on my freelance website or at the contact
+        section{" "}
         <Link
           activeClass=""
           to="contact"
